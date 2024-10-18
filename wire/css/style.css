@@ -1,0 +1,180 @@
+@charset "utf-8";
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+h2 {
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+  vertical-align: bottom;
+}
+
+/* .btn */
+.btn {
+  display: block;
+  padding: 10px 40px;
+  border: 2px solid #000;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: bold;
+  background: #fff;
+  color: #000;
+  transition: .3s;
+}
+.btn:hover {
+  background: #000;
+  color: #fff;
+}
+
+
+/********************
+* header
+*********************/
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 140px;
+  padding: 0 24px;
+}
+
+/********************
+* main
+*********************/
+/* COMMON */
+#about,
+#feature,
+#links,
+aside {
+  margin-top: 100px;
+}
+
+/* .main-visual */
+.main-visual {
+  display: block;
+  margin: auto;
+}
+
+/* #about */
+#about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+
+/* #feature */
+.list {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+.item {
+  width: 480px;
+  padding: 64px 24px;
+  background: #eee;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  border-radius: 50px;
+}
+.item:nth-of-type(2) {
+  background: #aaa;
+}
+.item img {
+  border-radius: 50%;
+}
+
+/* #links */
+#links {
+  display: flex;
+  justify-content: center;
+  gap: 118px;
+}
+.link {
+  width: 416px;
+  height: 152px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 80px;
+  border: 2px solid #000;
+  text-decoration: none;
+  color: #000;
+}
+.link:hover {
+  opacity: .8;
+}
+.link h2 {
+  font-size: 24px;
+}
+.link h2 span {
+  font-weight: normal;
+  font-size: 16px;
+  display: block;
+}
+
+/* aside */
+aside {
+  background: #eee;
+  padding: 100px;
+}
+aside .inner {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+}
+.link-boxes {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.link-box {
+  width: 630px;
+  height: 162px;
+  background: #fff;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  text-decoration: none;
+  color: #000;
+}
+.link-box:hover {
+  background: #fafafa;
+}
+.link-box p {
+  margin: 0;
+}
+.link-box span {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+
+/********************
+* footer
+*********************/
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  background: #212121;
+  color: #fff;
+  padding: 80px 0;
+  text-align: center;
+}
